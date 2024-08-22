@@ -1,9 +1,9 @@
 #include <iostream>
+#include <cstring>
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <string.h>
 
 int main() {
     const char *fifoPath = "/tmp/my_fifo";
