@@ -7,8 +7,8 @@ cat コマンドで、上記の FIFO を読み取る。
 ビルド
 
 ```shell
-$ cmake -S . -B build
-$ cmake --build build
+cmake -S . -B build
+cmake --build build
 ```
 
 実行
@@ -16,8 +16,8 @@ $ cmake --build build
 読み込み側を起動
 
 ```shell
-$ mkfifo /tmp/my_fifo
-$ cat /tmp/my_fifo
+mkfifo /tmp/my_fifo
+cat /tmp/my_fifo
 ```
 
 書き込み側を起動（↑ のシェルとは別のシェルで起動する）
