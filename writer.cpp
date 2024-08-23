@@ -13,9 +13,10 @@ int main()
 
     for (int i = 0; i < 10; i++)
     {
+        std::cout << "> ";
         std::string buf;
         std::cin >> buf;
-        write(fd, buf.c_str(), buf.size());
+        write(fd, (buf + "\n").c_str(), buf.size() + 1);
     }
 
     close(fd);
